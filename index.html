@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>A Little Something for Diksha ✨</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+    <!-- =================================
+     BACKGROUND MUSIC
+================================= -->
+
+<audio
+    id="bgMusic"
+    loop
+    preload="auto"
+>
+    <source
+        src="assets/birthday-music.mp3"
+        type="audio/mpeg"
+    >
+</audio>
+
+<button
+    id="musicToggle"
+    class="music-toggle"
+    type="button"
+    aria-label="Turn music on"
+>
+    🎵
+</button>
+
+
+<main class="birthday-app">
+
+
+    <!-- =====================================================
+         INTRO / LANDING SCREEN
+    ====================================================== -->
+
+    <section
+        id="intro"
+        class="intro"
+    >
+
+        <!-- Animated stars will be created by JavaScript -->
+
+        <div class="stars"></div>
+
+
+        <div class="intro-content">
+
+
+            <p class="date">
+                08 • 10 • 2026
+            </p>
+
+
+            <h1>
+                Hey, Diksha...
+            </h1>
+
+
+            <p class="intro-text">
+
+                I made something for you.
+
+                <br>
+
+                Don't worry...
+                it's not a 10-page birthday essay. 😂
+
+            </p>
+
+
+
+            <!-- =========================
+                 GIFT BOX
+            ========================== -->
+
+            <div
+                class="gift-container"
+                id="giftBox"
+                tabindex="0"
+                role="button"
+                aria-label="Open birthday gift"
+            >
+
+                <div class="gift-lid">
+
+                    <div class="ribbon-horizontal"></div>
+
+                </div>
+
+
+                <div class="gift-body">
+
+                    <div class="ribbon-vertical"></div>
+
+                </div>
+
+
+                <div class="bow">
+
+                    <span></span>
+
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+
+            <button
+                id="openGift"
+                class="primary-btn"
+                type="button"
+            >
+
+                Open your gift 🎁
+
+            </button>
+
+
+            <p class="small-warning">
+
+                Warning:
+                questionable amounts of coding involved.
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MAIN EXPERIENCE
+    ====================================================== -->
+
+    <section
+        id="mainContent"
+        class="main-content hidden"
+    >
+
+
+
+        <!-- =================================================
+             PHOTO INTRO
+        ================================================== -->
+
+        <div class="section-intro">
+
+
+            <p class="section-label">
+                A LITTLE PHOTO MOMENT
+            </p>
+
+
+            <h2>
+                Okay... it's yours. 💗
+            </h2>
+
+
+            <p class="section-subtitle">
+
+                I made a few little things.
+
+                <br>
+
+                Tap around.
+                Nothing should explode.
+
+                <br>
+
+                <span>
+                    Probably. 😂
+                </span>
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             PHOTO STAGE
+        ================================================== -->
+
+        <div class="photo-stage">
+
+
+            <div class="glow-circle"></div>
+
+
+
+            <!-- BACK PHOTO -->
+
+            <div class="photo-card photo-back">
+
+                <img
+                    src="assets/diksha-2.jpg"
+                    alt="Diksha"
+                >
+
+            </div>
+
+
+
+            <!-- FRONT PHOTO -->
+
+            <div class="photo-card photo-front">
+
+                <img
+                    src="assets/diksha-1.jpg"
+                    alt="Diksha"
+                >
+
+                <div class="photo-shine"></div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <p class="photo-caption">
+
+            Some pictures deserve
+            their own little moment. ✨
+
+        </p>
+
+
+
+        <button
+            id="explorePhotos"
+            class="primary-btn photo-btn"
+            type="button"
+        >
+
+            Explore ✨
+
+        </button>
+
+
+
+        <!-- =================================================
+             PHOTO REVEAL
+        ================================================== -->
+
+        <div
+            id="photoReveal"
+            class="photo-reveal hidden"
+        >
+
+
+            <div class="reveal-photo">
+
+                <img
+                    src="assets/diksha-2.jpg"
+                    alt="Diksha"
+                >
+
+            </div>
+
+
+
+            <div class="reveal-text">
+
+
+                <p class="section-label">
+                    ONE SMALL COMPLIMENT
+                </p>
+
+
+                <h3>
+                    Okay... I admit it. 😭
+                </h3>
+
+
+                <p>
+
+                    You actually photograph
+                    <strong>really well.</strong>
+
+                </p>
+
+
+                <p class="tiny-joke">
+
+                    Don't let this go to your head though. 😂
+
+                </p>
+
+
+            </div>
+
+
+
+            <button
+                id="continueBtn"
+                class="primary-btn"
+                type="button"
+            >
+
+                There's more... 👀
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             INTERACTIVE GIFTS
+        ================================================== -->
+
+        <section
+            id="giftSection"
+            class="gift-section"
+        >
+
+
+            <div class="section-label">
+                A FEW LITTLE THINGS
+            </div>
+
+
+            <h3>
+                Since you're already here... 👀
+            </h3>
+
+
+            <p class="gift-intro">
+
+                I thought I'd leave
+                a few things for you.
+
+                <br>
+
+                Go ahead.
+                Pick one. 🎁
+
+            </p>
+
+
+
+            <!-- =============================================
+                 FOUR GIFTS
+            ============================================== -->
+
+            <div class="interactive-gifts">
+
+
+
+                <!-- GIFT 1 -->
+
+                <button
+                    class="gift-card"
+                    type="button"
+                    data-type="flower"
+                    data-title="A little throwback 🌸"
+                    data-message="Funny how someone from school can stay in your memory even after years of not talking much. Some people just do. :)"
+                >
+
+                    <span class="gift-icon">
+                        🌸
+                    </span>
+
+
+                    <span class="gift-title">
+                        A little throwback
+                    </span>
+
+
+                    <span class="gift-subtitle">
+                        Something from school
+                    </span>
+
+                </button>
+
+
+
+                <!-- GIFT 2 -->
+
+                <button
+                    class="gift-card"
+                    type="button"
+                    data-type="letter"
+                    data-title="A tiny note 💌"
+                    data-message="I don't know everything about you, but I hope this year brings you good people, peaceful days, unexpected happiness and lots of reasons to smile."
+                >
+
+                    <span class="gift-icon">
+                        💌
+                    </span>
+
+
+                    <span class="gift-title">
+                        A tiny note
+                    </span>
+
+
+                    <span class="gift-subtitle">
+                        Just something nice
+                    </span>
+
+                </button>
+
+
+
+                <!-- GIFT 3 -->
+
+                <button
+                    class="gift-card"
+                    type="button"
+                    data-type="code"
+                    data-title="Developer edition 💻"
+                    data-message="I could have bought a normal gift in 10 minutes. Instead I chose HTML, CSS, JavaScript, bugs, debugging and questionable life decisions. You're welcome. 😂"
+                >
+
+                    <span class="gift-icon">
+                        💻
+                    </span>
+
+
+                    <span class="gift-title">
+                        Developer edition
+                    </span>
+
+
+                    <span class="gift-subtitle">
+                        Extremely unnecessary
+                    </span>
+
+                </button>
+
+
+
+                <!-- GIFT 4 -->
+
+                <button
+                    class="gift-card"
+                    type="button"
+                    data-type="surprise"
+                    data-title="One tiny surprise 🎀"
+                    data-message="No hidden agenda. No awkward speech. Just a small birthday surprise from someone who genuinely hopes you have a beautiful day."
+                >
+
+                    <span class="gift-icon">
+                        🎀
+                    </span>
+
+
+                    <span class="gift-title">
+                        One tiny surprise
+                    </span>
+
+
+                    <span class="gift-subtitle">
+                        Open this last... maybe
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 GIFT REVEAL
+            ============================================== -->
+
+            <div
+                id="giftReveal"
+                class="gift-reveal hidden"
+            >
+
+
+                <div
+                    id="revealIcon"
+                    class="reveal-icon"
+                >
+                    ✨
+                </div>
+
+
+                <div class="reveal-content">
+
+
+                    <div
+                        id="revealTitle"
+                        class="reveal-title"
+                    >
+
+                        Something for you
+
+                    </div>
+
+
+                    <p
+                        id="revealMessage"
+                        class="reveal-message"
+                    ></p>
+
+
+                </div>
+
+
+                <button
+                    id="closeReveal"
+                    class="close-reveal"
+                    type="button"
+                >
+
+                    Choose another ✨
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 DEVELOPER JOKE
+            ============================================== -->
+
+            <div class="developer-joke">
+
+
+                <span>
+                    SYSTEM STATUS:
+                </span>
+
+
+                <strong>
+                    Birthday.exe successfully running
+                </strong>
+
+
+                <br>
+
+
+                <small>
+                    Error 404:
+                    normal birthday gift not found.
+                </small>
+
+
+            </div>
+
+
+
+            <button
+                id="continueToStory"
+                class="primary-btn story-btn"
+                type="button"
+            >
+
+                There's something else... 👀
+
+            </button>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             STEP 4 — SCHOOL THROWBACK
+        ================================================== -->
+
+        <section
+            id="storySection"
+            class="story-section"
+        >
+
+
+            <!-- =============================================
+                 STORY INTRO
+            ============================================== -->
+
+            <div class="story-heading">
+
+
+                <p class="section-label">
+                    A LITTLE THROWBACK
+                </p>
+
+
+                <h3>
+
+                    Four years.
+
+                    <br>
+
+                    That's kind of crazy. 🌸
+
+                </h3>
+
+
+                <p>
+
+                    We didn't talk a lot.
+
+                    <br>
+
+                    But somehow,
+                    I still remember you.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 TIMELINE
+            ============================================== -->
+
+            <div class="timeline">
+
+
+
+                <!-- =========================================
+                     TIMELINE 1 — SCHOOL
+                ========================================== -->
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-dot">
+                        🌸
+                    </div>
+
+
+                    <div class="timeline-card">
+
+
+                        <span class="timeline-year">
+                            THEN
+                        </span>
+
+
+                        <h4>
+                            Back in school
+                        </h4>
+
+
+                        <p>
+
+                            We used to talk a little.
+
+                            <br>
+
+                            Nothing dramatic.
+                            Nothing like a movie. 😂
+
+                        </p>
+
+
+                        <p class="timeline-small">
+
+                            Just a few conversations
+                            that somehow stayed
+                            in my memory.
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =========================================
+                     TIMELINE 2 — YEARS
+                ========================================== -->
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-dot">
+                        ⏳
+                    </div>
+
+
+                    <div class="timeline-card">
+
+
+                        <span class="timeline-year">
+                            SOME YEARS LATER
+                        </span>
+
+
+                        <h4>
+                            Life happened
+                        </h4>
+
+
+                        <p>
+
+                            School ended.
+
+                            <br>
+
+                            Everyone got busy.
+
+                            <br>
+
+                            And naturally,
+                            we talked less.
+
+                        </p>
+
+
+                        <p class="timeline-small">
+
+                            Funny how time can
+                            move so fast.
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =========================================
+                     TIMELINE 3 — TODAY
+                ========================================== -->
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-dot">
+                        ✨
+                    </div>
+
+
+                    <div class="timeline-card">
+
+
+                        <span class="timeline-year">
+                            TODAY
+                        </span>
+
+
+                        <h4>
+                            And here we are...
+                        </h4>
+
+
+                        <p>
+
+                            I don't know everything
+                            about you.
+
+                            <br>
+
+                            Honestly,
+                            I probably don't know enough.
+
+                        </p>
+
+
+                        <p class="timeline-small">
+
+                            But somehow,
+                            you're still someone
+                            I remember.
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =========================================
+                     FINAL TIMELINE MESSAGE
+                ========================================== -->
+
+                <div class="timeline-final">
+
+
+                    <div class="final-star">
+                        ✦
+                    </div>
+
+
+                    <h4>
+
+                        Maybe some people
+                        just stay memorable.
+
+                    </h4>
+
+
+                    <p>
+
+                        That's all.
+
+                        <br>
+
+                        No complicated explanation. :)
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 NEXT STEP
+            ============================================== -->
+
+            <button
+                id="letterButton"
+                class="primary-btn story-next-btn"
+                type="button"
+            >
+
+                There's one more thing... 💌
+
+            </button>
+            <!-- =================================================
+     STEP 5 — THE LETTER
+================================================== -->
+
+<section id="letterSection" class="letter-section hidden">
+
+    <div class="letter-intro">
+
+        <p class="section-label">
+            ONE LAST LITTLE THING
+        </p>
+
+        <h3>
+            Okay...
+            <br>
+            this one's a little different. 💌
+        </h3>
+
+        <p>
+            Don't worry.
+            <br>
+            It's still not a 10-page essay. 😂
+        </p>
+
+    </div>
+
+
+    <!-- ENVELOPE -->
+
+    <div
+        id="envelope"
+        class="envelope"
+        role="button"
+        tabindex="0"
+        aria-label="Open letter"
+    >
+
+        <div class="envelope-back"></div>
+
+        <div class="letter-paper">
+
+            <div class="letter-lines">
+
+                <p>Dear Diksha,</p>
+
+                <p>
+                    I don't really know where to start...
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="envelope-front"></div>
+
+        <div class="envelope-flap"></div>
+
+        <div class="envelope-heart">
+            ♥
+        </div>
+
+    </div>
+
+
+    <button
+        id="openLetter"
+        class="primary-btn"
+        type="button"
+    >
+        Open the letter 💌
+    </button>
+
+
+    <!-- ACTUAL LETTER -->
+
+    <div
+        id="letterContent"
+        class="letter-content hidden"
+    >
+
+        <div class="letter-paper-large">
+
+            <div class="letter-top">
+
+                <span>
+                    08 · 10 · 2026
+                </span>
+
+                <span>
+                    ✦
+                </span>
+
+            </div>
+
+
+            <h4>
+                Dear Diksha,
+            </h4>
+
+
+            <div
+                id="letterText"
+                class="letter-text"
+            >
+
+                <p>
+                    Four years ago,
+                    we were just schoolmates who
+                    talked a little from time to time.
+                </p>
+
+                <p>
+                    Life happened,
+                    school ended,
+                    and somehow years passed.
+                </p>
+
+                <p>
+                    We haven't talked much,
+                    and I don't know everything about you.
+                    But for some reason,
+                    you've remained someone I remember.
+                </p>
+
+                <p>
+                    So I thought...
+                    why not make your birthday
+                    a little different this year?
+                </p>
+
+                <p>
+                    I hope this year brings you
+                    good people, beautiful moments,
+                    and plenty of reasons to smile.
+                </p>
+
+                <p class="letter-highlight">
+                    You deserve a really good year. ✨
+                </p>
+
+                <p class="letter-sign">
+
+                    Happy Birthday, Diksha. ❤️
+
+                    <br>
+
+                    And yes...
+                    I really coded all this
+                    instead of simply texting
+                    "Happy Birthday." 😂
+
+                </p>
+
+            </div>
+
+
+            <div class="letter-footer">
+
+                <span>
+                    Made with HTML, CSS & a questionable amount of effort.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <button
+            id="finalSurprise"
+            class="primary-btn final-button"
+            type="button"
+        >
+            One last surprise... 👀
+        </button>
+        <!-- =============================================
+     STEP 6 — FINAL SURPRISE
+============================================= -->
+
+<section id="finalSection" class="final-section hidden">
+
+    <div class="final-stars"></div>
+
+    <div class="final-content">
+
+        <p class="section-label">
+            OKAY... THIS IS ACTUALLY THE END
+        </p>
+
+        <div class="final-icon">
+            ✨
+        </div>
+
+        <h2>
+            Happy Birthday,
+            <span>Diksha.</span> 🎂
+        </h2>
+
+        <p class="final-message">
+            I hope you smile at least once today
+            because of this little corner of the internet. :)
+        </p>
+
+        <p class="final-message small-final">
+            May this year be kinder, happier,
+            and full of moments worth remembering. ✨
+        </p>
+
+        <div class="birthday-line">
+            <span>🎈</span>
+            <span>🎂</span>
+            <span>🎈</span>
+        </div>
+
+        <div class="final-note">
+            <p>
+                And yes...
+            </p>
+
+            <strong>
+                I really made an entire website
+                instead of just texting you. 😂
+            </strong>
+
+            <p class="final-sign">
+                — Akash
+            </p>
+        </div>
+
+        <button
+            id="restartButton"
+            class="primary-btn restart-btn"
+            type="button"
+        >
+            Replay the little surprise ↻
+        </button>
+
+    </div>
+
+</section>
+
+    </div>
+
+</section>
+
+
+        </section>
+
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
